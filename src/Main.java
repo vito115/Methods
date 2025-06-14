@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
 
     public static void leapYear(int year) {
@@ -8,15 +10,14 @@ public class Main {
         }
     }
 
-    public static void correctSetup(int clientOS, int clientDeviseYear) {
+    public static void installCorrectOS(int clientOS, int clientDeviseYear) {
         if (clientDeviseYear < 2015 && clientOS == 0) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if(clientDeviseYear < 2015 && clientOS == 1){
+        } else if (clientDeviseYear < 2015 && clientOS == 1){
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }
-        if (clientDeviseYear >= 2015 && clientOS == 0) {
+        } else if (clientDeviseYear >= 2015 && clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if(clientDeviseYear >= 2015 && clientOS == 1){
+        } else if (clientDeviseYear >= 2015 && clientOS == 1){
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
@@ -42,7 +43,7 @@ public class Main {
 
         System.out.println("Задача 2");
 
-        correctSetup(0, 2015);
+        installCorrectOS(0, 2015);
 
         System.out.println("Задача 3");
 
